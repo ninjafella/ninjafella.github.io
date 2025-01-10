@@ -1,0 +1,66 @@
+<html>
+<header>
+    <title>Henry Bishop</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="general.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</header>
+
+<body>
+    <nav>
+        <a class="a-about" href="/">About Me</a>
+        <div class="dropdown">
+            <a>Projects</a>
+            <div class="dropdown-content dropdown-animation">
+                <a href="/cilt.html">CILT Contract Work</a>
+                <a href="/cloudflare.html">Cloudflare_DNS_updater</a>
+                <a href="/discord.html">Discord-API-Limits</a>
+                <a href="/googly.html">Googly Bot</a>
+                <a href="/privacy.html">Privacy Pi</a>
+                <a href="/towayen.html">TOWAYEN</a>
+                <a href="/tips.html">Tips Calc</a>
+            </div>
+        </div>
+    </nav>
+    <div class="h1-div">
+        <div class="h1-left-corner"></div>
+        <h1>Googly Bot</h1>
+        <div class="h1-right-corner"></div>
+    </div>
+    <div id="main-block">
+        <p>Starting out as my A-level project it has now become a fully fledged Discord bot. The project was initially a
+            learning experience for me. I wanted to learn how to properly use an API, web sockets and get into some web
+            development. Using all the different request types and accounting for rate limits, which is why one of my
+            other projects “Discord-API-Limits” was created. With this project I also had to learn about web sockets to
+            get real time information from Discord about new messages for example.</p>
+        <p>For the website I used flask since it is a well-known web framework for python with lots of documentation and
+            a strong community that I could reply on for assistants. The web dashboard allowed for all aspects of the
+            bot to be easily configured and tweaked.</p>
+        <p>For Googly I created the following features:
+        <ul>
+            <li>Welcome/Leave messages. Useful to let the server know when new people join their community. Welcome
+                messages could also be configured to send a DM to the new user.</li><br>
+            <li>Custom prefix. Before slash commands where introduce on Discord bots used prefixes to know whether a
+                command for them had been sent, this is not used today but I have still left it as part of the bot
+                encase people prefer the old way (I do).</li><br>
+            <li>Message logging. This can be extremely useful for admins and moderators of a server. Whenever a message
+                is edited or deleted, the original message would be sent in the form of an embed message to a specified
+                channel.</li><br>
+            <li>Anti-spam. Another useful tool for admins and mods, this stops people from sending repeated messages
+                across a server. This is now unfortunately not needed since Discord has created their own implementation
+                since I added this feature.</li><br>
+            <li>Auto-Threads. This is a feature that allows for threads to be automatically created from a message is
+                a specified channel. The tread would then be named based off what was said in the first message in the
+                new thread. This is useful for servers that have help channels, allowing them to remain neat and tidy.
+            </li>
+        </ul>
+        </p>
+        <p>There are more features that I have planned for the future.</p>
+        <p>At the moment Googly Bot is offline while I do a complete overhaul of the code and web dashboard.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+            <img style="width:15%; height:20%; padding-right: 5%;" src="images/googly v3 icon.png" alt="Googly Icon">
+            <img style="width:80%;" src="images/Googly home.png" alt="Googly Home Page">
+        </div>
+    </div>
+</body>

@@ -1,0 +1,44 @@
+<html>
+<header>
+    <title>Henry Bishop</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="general.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</header>
+
+<body>
+    <nav>
+        <a class="a-about" href="/">About Me</a>
+        <div class="dropdown">
+            <a>Projects</a>
+            <div class="dropdown-content dropdown-animation">
+                <a href="/cilt.html">CILT Contract Work</a>
+                <a href="/cloudflare.html">Cloudflare_DNS_updater</a>
+                <a href="/discord.html">Discord-API-Limits</a>
+                <a href="/googly.html">Googly Bot</a>
+                <a href="/privacy.html">Privacy Pi</a>
+                <a href="/towayen.html">TOWAYEN</a>
+                <a href="/tips.html">Tips Calc</a>
+            </div>
+        </div>
+    </nav>
+    <div class="h1-div">
+        <div class="h1-left-corner"></div>
+        <h1>Cloudflare_DNS_updater</h1>
+        <div class="h1-right-corner"></div>
+    </div>
+    <div id="main-block">
+        <p>This is a simple python script that you can set to run on a schedule in the background and it will update DNS
+            records if you are self-hosting applications and don’t have access to a static IP for your home.</p>
+        <p>Using the Cloudflare API this script will check to see if your networks public IP address has changed and if
+            it has it simply updates Cloudflare’s DNS service to point at the new IP. This is useful for people that
+            self-host applications that they want to have access to outside of their local network. This removes the
+            need for a static IP as you can rest assured that whenever your public IP gets changed your services will
+            not be affected.</p>
+        <br>
+        <div style="display: flex; justify-content: center;">
+            <img src="images/cloudflare.png" alt="CILT Logo">
+        </div>
+    </div>
+</body>
